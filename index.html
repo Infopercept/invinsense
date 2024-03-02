@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <caption>Tools Details</caption>
+        <thead>
+          <tr>
+            <th class="primary" scope="col">Tools Name</th>
+            <th scope="col">Github Repo Link</th>
+            <th scope="col">Docker Images</th>
+            <th scope="col">Build Duration</th>
+            <th scope="col">Build Size</th>
+            <th scope="col">Bare Minimum</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">SIEM</th>
+            <td><a href="https://github.com/Infopercept/xdr-docker">SIEM</a></td>
+            <td>infopercept/wazuh-manager<br>
+                infopercept/wazuh-dashboard<br>
+                infopercept/wazuh-indexer
+            </td>
+            <td></td>
+            <td>351.18 MB<br>
+                285.06 MB<br>
+                1.43 GB
+            </td>
+            <td>
+                CPU: 2-4 vCPU<br>
+                RAM: 4 GiB<br>
+                Storage: 50GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">SOAR</th>
+            <td><a href="https://github.com/Infopercept/invinsense-soar">SOAR</a></td>
+            <td>infopercept/invinsense-soar-frontend<br>
+                infopercept/invinsense-soar-backend
+            </td>
+            <td>
+                12 Min<br>
+                9 Min
+            </td>
+            <td>79.81 MB<br>
+                33.75 MB<br>
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 8 GiB<br>
+                Storage: 100GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">CASE MANAGEMENT</th>
+            <td><a href="https://github.com/Infopercept/case-management">CASE MANAGEMENT</a></td>
+            <td>infopercept/thehive
+            </td>
+            <td>
+                24 Min
+            </td>
+            <td>750.5 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 4-8 GiB<br>
+                Storage: 100GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">THREAT INTELLIGENCE</th>
+            <td><a href="https://github.com/Infopercept/threat-intelligence">THREAT INTELLIGENCE</a></td>
+            <td>infopercept/cortex
+            </td>
+            <td>
+                13 Min
+            </td>
+            <td>388.37 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 4 GiB<br>
+                Storage: 20GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">PATCH MANAGEMENT</th>
+            <td><a href="https://github.com/Infopercept/act">PATCH MANAGEMENT</a></td>
+            <td>infopercept/awx:latest<br>
+                ifnopercept/awx-ui:latest
+            </td>
+            <td>
+                10 Min <br>
+                12 Min
+            </td>
+            <td>
+                511.64 MB <br>
+                626.26 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 4 GiB<br>
+                Storage: 20GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">VULNEABILITY MANAGEMENT</th>
+            <td><a href="https://github.com/Infopercept/invinsense-vulnerability-management/">VULNEABILITY MANAGEMENT</a></td>
+            <td>infopercept/invinsense-vulnerability-management-django-alpine<br>
+                infopercept/invinsense-vulnerability-management-django-debian<br>
+                infopercept/invinsense-vulnerability-management-tests-debian<br>
+                infopercept/invinsense-vulnerability-management-nginx-alpine<br>
+                infopercept/invinsense-vulnerability-management-nginx-debian
+            </td>
+            <td>
+                14 Min<br>
+                12 Min<br>
+                11 Min<br>
+                12 Min<br>
+                9 Min<br>
+            </td>
+            <td>282 MB<br>
+                325.98 MB<br>
+                529.79 MB<br>
+                72.35 MB<br>
+                72.35 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 8 GiB<br>
+                Storage: 10GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">SSO</th>
+            <td><a href="https://github.com/Infopercept/invinsense-sso">SSO</a></td>
+            <td>infopercept/invinsense-sso:latest
+            </td>
+            <td>
+                1 Min
+            </td>
+            <td>421.87 MB
+            </td>
+            <td>
+                CPU: 1 vCPU<br>
+                RAM: 512 MiB<br>
+                Storage: 1GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">RBAS</th>
+            <td><a href="https://github.com/Infopercept/invinsense-rbas">RBAS</a></td>
+            <td>infopercept/invinsense-rbas
+            </td>
+            <td>
+                11 Min
+            </td>
+            <td>773.9 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 8 GiB<br>
+                Storage: 20GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">GSOS</th>
+            <td><a href="https://github.com/Infopercept/gsos">GSOS</a></td>
+            <td>infopercept/gsos_dev
+            </td>
+            <td>
+                15 Min
+            </td>
+            <td>619.18 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 4 GiB<br>
+                Storage: 20GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">SINGLE DASHBOARD</th>
+            <td><a href="https://github.com/Infopercept/invinsense-single-dashboard-web">SINGLE DASHBOARD</a></td>
+            <td>infopercept/invinsense-single-dashboard
+            </td>
+            <td>
+
+            </td>
+            <td>420.04 MB
+            </td>
+            <td>
+                CPU: 2 vCPU<br>
+                RAM: 4 GiB<br>
+                Storage: 50GB
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">MISP</th>
+            <td><a href="">MISP</a></td>
+            <td>
+            </td>
+            <td>
+                
+            </td>
+            <td>
+            </td>
+            <td>
+                
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">DEJAVU</th>
+            <td><a href="">DEJAVU</a></td>
+            <td>
+            </td>
+            <td>
+                
+            </td>
+            <td>
+            </td>
+            <td>
+                
+            </td>
+          </tr>
+          <!-- <tr>
+            <th scope="row">Udemy</th>
+            <td>Yes</td>
+            <td>Paid</td>
+            <td>Python and Machine Learning</td>
+          </tr> -->
+          <!-- <tr>
+            <th scope="row">Coursera</th>
+            <td>Yes</td>
+            <td>Free and Paid</td>
+            <td>IoT and AI</td>
+          </tr> -->
+        </tbody>
+        <!-- <tfoot>
+          <tr>
+            <th>Total Courses</th>
+            <td colspan="4"><i>What are you waiting for? Get Started now for free</i></td>
+          </tr>
+        </tfoot> -->
+      </table>
+</body>
+</html>
